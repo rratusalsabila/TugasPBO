@@ -1,5 +1,7 @@
-com\mycompany\sistemkepanitiaan\SistemKepanitiaan.class
+com\mycompany\sistemkepanitiaan\DapatLaporan.class
 com\mycompany\sistemkepanitiaan\StafDivisi.class
 com\mycompany\sistemkepanitiaan\AnggotaPanitia.class
+com\mycompany\sistemkepanitiaan\DapatMemimpin.class
 com\mycompany\sistemkepanitiaan\Volunter.class
+com\mycompany\sistemkepanitiaan\SistemKepanitiaan.class
 com\mycompany\sistemkepanitiaan\PanitiaInti.class

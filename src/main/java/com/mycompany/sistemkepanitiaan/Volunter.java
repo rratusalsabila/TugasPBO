@@ -17,11 +17,14 @@ public class Volunter extends AnggotaPanitia {
     }
 
     public void tampilkanInfo() {
-        System.out.printf("[Volunter] Nama: %-18s | NPM: %-10s | Divisi: %-12s | Area Tugas: %s\n", 
-            nama, npm, divisi, areaPenugasan);
+        System.out.println("[Volunter]     Nama: " + nama + " | NPM: " + npm + " | Divisi: " + divisi + " | Area Penugasan: " + areaPenugasan);
     }
 
     public void jalankanTugas() {
-        System.out.println("-> Bantuan Khusus: Membantu operasional di area " + areaPenugasan + ".");
+        System.out.println("   -> Tugas: Membantu operasional di area " + areaPenugasan + ".");
     }
-} 
+
+    public void hitungInsentif() {
+        System.out.println("   -> Insentif Volunter: Rp 150.000 (Uang Saku)");
+    }
+}

@@ -121,6 +121,17 @@ public class SistemKepanitiaan {
                             System.out.print((i + 1) + ". ");
                             daftarPanitia[i].tampilkanInfo();
                             simulasiTugas(daftarPanitia[i]);
+                            daftarPanitia[i].hitungInsentif();
+
+                            if (daftarPanitia[i] instanceof DapatMemimpin) {
+                                DapatMemimpin pimpinan = (DapatMemimpin) daftarPanitia[i];
+                                pimpinan.koordinasiProgram();
+                            }
+                            if (daftarPanitia[i] instanceof DapatLaporan) {
+                                DapatLaporan pelapor = (DapatLaporan) daftarPanitia[i];
+                                pelapor.buatLaporan();
+                            }
+                            System.out.println();
                         }
                     }
                     System.out.println("Total Panitia saat ini: " + AnggotaPanitia.getTotalPanitia());

@@ -8,21 +8,28 @@ package com.mycompany.sistemkepanitiaan;
  *
  * @author ASUS
  */
-public class StafDivisi extends AnggotaPanitia {
+public class StafDivisi extends AnggotaPanitia implements DapatLaporan {
     private String tugasSpesifik;
 
     public StafDivisi(String nama, String npm, String divisi, String tugasSpesifik) {
-        super(nama, npm, divisi); 
+        super(nama, npm, divisi);
         this.tugasSpesifik = tugasSpesifik;
     }
 
     public void tampilkanInfo() {
-        System.out.printf("[Staf Divisi]    Nama: %-18s | NPM: %-10s | Divisi: %-12s | Tugas: %s\n", 
-            nama, npm, divisi, tugasSpesifik);
+        System.out.println("[Staf Divisi]  Nama: " + nama + " | NPM: " + npm + " | Divisi: " + divisi + " | Tugas: " + tugasSpesifik);
     }
 
-    @Override
     public void jalankanTugas() {
-        System.out.println("-> Eksekusi Lapangan: " + tugasSpesifik);
+        System.out.println("   -> Tugas: Eksekusi lapangan -> " + tugasSpesifik);
+    }
+
+    public void hitungInsentif() {
+        System.out.println("   -> Insentif Staf Divisi: Rp 300.000");
+    }
+
+    public void buatLaporan() {
+        System.out.println("   -> [KONTRAK LAPORAN] Menyusun laporan progres divisi harian.");
     }
 }
+
