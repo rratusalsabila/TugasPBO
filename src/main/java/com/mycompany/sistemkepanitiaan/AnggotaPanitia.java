@@ -14,7 +14,10 @@ public abstract class AnggotaPanitia {
     protected String divisi;
     private static int totalPanitia = 0;
 
-    public AnggotaPanitia(String nama, String npm, String divisi) {
+    public AnggotaPanitia(String nama, String npm, String divisi) throws Exception {
+        if (npm.isEmpty()) {
+            throw new Exception("NPM tidak boleh kosong!");
+        }
         this.nama = nama;
         this.npm = npm;
         this.divisi = divisi;

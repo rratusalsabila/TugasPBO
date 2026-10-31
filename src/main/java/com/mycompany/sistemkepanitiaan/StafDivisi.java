@@ -11,7 +11,7 @@ package com.mycompany.sistemkepanitiaan;
 public class StafDivisi extends AnggotaPanitia implements DapatLaporan {
     private String tugasSpesifik;
 
-    public StafDivisi(String nama, String npm, String divisi, String tugasSpesifik) {
+    public StafDivisi(String nama, String npm, String divisi, String tugasSpesifik) throws Exception {
         super(nama, npm, divisi);
         this.tugasSpesifik = tugasSpesifik;
     }

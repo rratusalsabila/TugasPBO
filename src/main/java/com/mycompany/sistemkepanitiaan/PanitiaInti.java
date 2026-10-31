@@ -11,8 +11,11 @@ package com.mycompany.sistemkepanitiaan;
 public class PanitiaInti extends AnggotaPanitia implements DapatMemimpin, DapatLaporan {
     private String jabatan;
 
-    public PanitiaInti(String nama, String npm, String divisi, String jabatan) {
+    public PanitiaInti(String nama, String npm, String divisi, String jabatan) throws Exception {
         super(nama, npm, divisi);
+        if (jabatan.isEmpty()) {
+            throw new Exception("Jabatan tidak boleh kosong!");
+        }
         this.jabatan = jabatan;
     }
 

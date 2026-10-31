@@ -11,7 +11,7 @@ package com.mycompany.sistemkepanitiaan;
 public class Volunter extends AnggotaPanitia {
     private String areaPenugasan;
 
-    public Volunter(String nama, String npm, String divisi, String areaPenugasan) {
+    public Volunter(String nama, String npm, String divisi, String areaPenugasan) throws Exception {
         super(nama, npm, divisi);
         this.areaPenugasan = areaPenugasan;
     }
